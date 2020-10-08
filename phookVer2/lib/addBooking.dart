@@ -24,7 +24,7 @@ class _AddBookingState extends State<AddBooking> {
 
   addEditUser() {
     if (editMode) {
-      var url = 'http://13.212.35.182/editBooking.php';
+      var url = 'http://127.0.0.1/DB2/editBooking.php';
       http.post(url, body: {
         'idBooking': widget.list[widget.index]['idBooking'],
         'date': dateController.text,
@@ -35,7 +35,7 @@ class _AddBookingState extends State<AddBooking> {
         //picture
       });
     } else {
-      var url = 'http://13.212.35.182/addBooking.php';
+      var url = 'http://127.0.0.1/DB2/addBooking.php';
       http.post(url, body: {
         'date': dateController.text,
         'time': timeController.text,

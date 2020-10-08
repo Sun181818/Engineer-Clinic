@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   Future getUserData() async {
-    var url = 'http://13.212.35.182/viewBooking.php';
+    var url = 'http://127.0.0.1/DB2/viewBooking.php';
     var respone = await http.get(url);
     return json.decode(respone.body);
   }
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Phook'),
+        title: Text('Engineering Clinic'),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Icon(Icons.delete),
                         onTap: () {
                           setState(() {
-                            var url = 'http://13.212.35.182/deleteBooking.php';
+                            var url = 'http://127.0.0.1/DB2/deleteBooking.php';
                             http.post(url, body: {
                               'idBooking': list[index]['idBooking'],
                             });
