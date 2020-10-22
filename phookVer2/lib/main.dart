@@ -120,3 +120,19 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),*/
+
+
+    /*Widget buildButtonRegister() {
+    return InkWell(
+        child: Container(
+            constraints: BoxConstraints.expand(height: 50),
+            child: Text("Sign up",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 25, color: Colors.white,fontFamily: 'FC Lamoon',)),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: Colors.lightBlue),
+            margin: EdgeInsets.only(top: 12),
+            padding: EdgeInsets.all(12),),
+        onTap: ()
+    {*/
