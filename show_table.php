@@ -57,6 +57,17 @@
           <th>Delete</th>
         </tr>
 
+        <tr>
+          <th>ProfressorID</th>
+          <th>NameTitle</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Expert</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+
         <?php
         while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
         ?>
